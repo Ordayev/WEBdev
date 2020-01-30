@@ -1,0 +1,214 @@
+body{
+	background-color: rgba(var(--b3f,250,250,250),1);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	color: rgb(153, 153, 153);
+}
+#left-box{
+	width: 50%;
+	height: 900px;
+	float: left;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+#right-box{
+	width: 50%;
+	height: 900px;
+	float: right;
+	position: relative;
+}
+
+#phone{
+	position: relative;
+	float: right;
+	width: 454px;
+	height: 618px;
+	margin-top: 136px;
+	margin-right: -58px;
+    background-image: url(phone.png);
+    background-size: 400px 600px;
+    background-repeat: no-repeat;
+}
+
+.Slides{
+	background-color: black;
+	position:relative;
+	width: 247px;
+	height: 439px;
+	float: right;
+	margin-right: 82px;
+	margin-top: 86px;
+}
+.Slides img{
+	position:relative;
+	width: 247px;
+	height: 439px;
+}
+
+#login-box, #mini-box{
+	position: relative;
+	float: left;
+	width: 350px;
+	height: 600px;
+	margin-top: 45px;
+	margin-left: 20px;
+	background-color: white;
+	border: 1px solid rgb(190, 190, 190);;
+	text-align: center;
+}
+#logo{
+	background-image: url(image/logo.png);
+	background-repeat: no-repeat;
+	background-size: 215px 85px;
+	background-position: center;
+	margin:auto;
+	width: 100%;
+	height: 90px;
+}
+#content{
+	position: relative;
+	width: 280px;
+	margin: 0px 35px 0 35px;
+}
+h4 ,h5{
+	text-decoration: none;
+	font-weight: lighter;
+	margin:5px;
+}
+p{
+	font-size: 14px;
+
+}
+input{
+	width: 270px;
+	background-color: rgba(var(--b3f,250,250,250),1);
+	border: 1px solid rgb(190, 190, 190);
+	border-radius: 3px;
+	height: 25px;
+	margin-top: 5px;
+	padding: 5px;
+	color: rgb(99, 99, 99);
+}
+input[type=submit]{
+	color: white;
+	font-weight: bold;
+	background-color: #0099ff;
+	padding: 10px;
+	height: 35px;
+	width: 280px;
+	margin-top: 10px;
+}
+input[type=submit]:hover{
+	cursor: pointer;
+}
+
+#mini-box{
+	position: absolute;
+	margin-top: 660px;
+	float: left;
+	width: 350px;
+	height: 75px;
+	font-size: 14px;
+	color: black;
+}
+#mini-box p{
+	margin-top: 25px;
+}
+a{
+	text-decoration: none;
+	color: cornflowerblue;
+}
+
+#app{
+	position: absolute;
+	margin-top: 740px;
+	margin-left: 20px;
+	float: left;
+	padding-left: 40px;
+	width: 310px;
+	height: 100px;
+	text-align: center;
+	color: black;
+}
+#app p{
+	margin-left: -40px;;
+}
+#store{
+	position: relative;
+	float: left;
+	width:133px;
+	height: 42px;
+	border-radius: 4px;
+	margin-right: 10px;
+}
+#store:active {
+	opacity: 0.6;
+}
+
+.appstore{
+	background-image: url(image/appstore.png);
+	background-repeat: no-repeat;
+	background-size: 133px 42px;
+	width: 25px;
+	float: left;
+	margin: 5px;
+}
+
+.playmarket{
+	background-image: url(image/playmarket.png);
+	background-repeat: no-repeat;
+	background-size: 133px 42px;
+	width: 25px;
+	float: left;
+	margin: 5px;
+}
+
+#footer{
+	position: relative;
+	width: 100%;
+	max-width: 1100px;
+  	height: 100px;
+	clear:both;
+	font-size:80%; 
+	text-align:left; 
+	  clear:both;
+	  margin: auto;
+  	padding-top: 10px; 
+}
+#footer li{
+	margin:10px; 
+	padding:0;
+	list-style:none; 
+	display:inline; 	
+}
+#footer a,p{
+	font-size: 12px;	
+	font-weight: bold;
+	color:#2d4b69;
+}
+#footer p{
+	color: inherit;
+	margin-left: 50px;	
+}
+
+@media screen and (max-width:875px){
+	#left-box{
+		float: none;
+		display: none;
+		visibility: hidden;
+	}
+	#right-box{
+		float: none;
+		padding: 0;
+		margin: auto;
+	}
+	#login-box, #mini-box{
+		margin-left: 0;
+	}
+	#footer{
+		width: 400px;
+		margin: auto;
+		text-align:center; 
+  		clear:both;
+	}
+}

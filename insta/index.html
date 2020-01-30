@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instagram</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="left-box">
+		<div id="phone">
+			<div class="Slides">
+				<img class="mySlides" src="image/1.jpg">
+				<img class="mySlides" src="image/2.jpg">
+				<img class="mySlides" src="image/3.jpg">	
+			</div>	
+		</div>
+	</div>
+	<div id="right-box">
+		<div id="login-box">
+			<div id="logo"></div>
+			<div id="content">
+				<h4 class="">Зарегистрируйтесь, чтобы <br>смотреть фото и видео ваших <br>друзей.</h4>
+				<input type="submit" name="facebook" onclick="" value="Войти через Facebook">
+				<h4>------------ или --------------</h4>
+				<input placeholder="Email" type="email" id="email" name="email" required />
+				<input placeholder="Name Surname" type="text" id="name" name="name" required />
+				<input placeholder="Username" type="text" id="username" name="username" required />
+				<input type="password" id="passwod" name="password" placeholder="Password"  required >
+				<input type="submit" name="Registr" onclick="" value="Регистрация">
+				<p>Регистрируясь, вы принимаете <br>наши <strong>Условия, Политику <br> использования данных и <br> Политику в отношении файлов <br> cookie</strong>.</p>
+			</div>
+		</div>
+		<div id="mini-box">
+			<p>Есть аккаунт? <a href="">Вход</a></p>
+		</div>
+		<div id="app">
+			<p>Установите приложение</p>
+			<div id="store" class="appstore">
+				
+			</div>
+			<div id="store" class="playmarket">
+
+			</div>
+		</div>
+		</div>
+	</div>
+	<div id="footer">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">STORE</a></li>
+		 	<li><a href="">CONTACT</a></li>
+		 	<li><a href="">ABOUT US</a></li>
+			<li><a href="">ABOUT US</a></li>
+			<li><a href="">ABOUT US</a></li>
+			<li><a href="">Home</a></li>
+			<li><a href="">STORE</a></li>
+		 	<li><a href="">CONTACT</a></li>
+		 	<li><a href="">ABOUT US</a></li>
+			<li><a href="">ABOUT US</a></li>
+			<li><a href="">ABOUT US</a></li>
+		</ul>
+		<p>© INSTAGRAM ОТ Adil, 2020</p>
+	</div>
+
+
+	<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > x.length){
+  	slideIndex = 1;
+  } 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 4000); 
+}
+</script>
+
+</body>
+</html>
