@@ -1,0 +1,208 @@
+body{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.664);
+    background-color: #fff;
+    margin: auto;
+}
+#header{
+    position: relative;
+    display: block;
+    padding: 12px;
+    background-color: #24292e;
+    color: #fff;
+}
+#header img{
+    width: 35px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: #24292e;
+}
+.dropdown span:hover {
+    color: #a0a0a0;
+}
+.dropdown-content p:hover{
+    color: cornflowerblue;
+}
+
+#search{
+    position: relative;
+    display: inline-flex;
+    float: right;
+    margin-right: 10px;
+}
+input[type=search]{
+    padding: 10px;
+    background-color: #2b3137;
+    border: none;
+    border-radius: 3px;
+}
+input[type=search]:focus{
+    background-color: #fafbfc;
+    color: #2b3137;
+}
+
+button{
+    position: relative;
+    margin: 5px;
+    padding: 0px;
+    width: 120px;
+    height: 35px;
+    background: none;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.up{
+    border: 1.5px solid #fff;
+}
+button:hover{
+    color: #a0a0a0;
+    border-color: #a0a0a0;
+}
+
+
+#main{
+    position: relative;
+    width: 100%;
+    height: 640px;
+    background: url(image/background.svg), #2b3137;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#left-box{
+    position: relative;
+    float: left;
+    width: 50%;
+}
+#right-box{
+    position: relative;
+    float: right;
+    width: 50%;
+}
+.textt{
+    position: relative;
+    float:right;
+    padding: 15px;
+    width: 500px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+#left-box a{
+    color: #fff;
+    text-decoration: underline rgba(255, 255, 255, 0.589);
+}
+a:hover{
+    text-decoration: underline #fff;
+}
+h1{
+    font-size: 55px;
+    line-height: 1;
+    color: white;
+}
+.login-box{
+    position: relative;
+    float: left;
+    margin:50px 30px;
+    padding: 20px;
+    width: 370px;
+    height: 470px;
+    background-color: white;
+    color: #2b3137;
+    line-height: 1.2;
+}
+label, input{
+    display: block;
+}
+label{
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+input{
+    padding: 10px;
+    width: 100%;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid #9099a1; 
+    margin-bottom: 15px;
+}
+.login-box p{
+    font-size: 13px;
+}
+input[type=submit]{
+    padding: 20px;
+    background-color: rgb(2, 172, 2);
+    color: white;
+    font-size: 18px;
+    margin-top: 25px;
+    height: auto;
+    opacity: 0.8;
+}
+input[type=submit]:hover{
+    opacity: 1;
+}
+
+
+@media screen and (max-width:1000px){
+    #header{
+        padding: 5px 10px;
+    }
+    .dropdown, #search{
+        float: none;
+		display: none;
+		visibility: hidden;
+    }
+    .login-box{
+        margin-right: 5%;
+    }
+    .login-box, .textt{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 800px) {
+    #main{
+        margin-top: ;
+        height: 900px;
+    }
+	#left-box, #right-box
+	{
+        text-align: center;
+		position: relative;
+		float: none;
+		width: 100%;
+    }
+    .login-box, .textt{
+        float: none;
+    }
+    .login-box{
+        float: none;
+		margin: auto;
+        width: 400px;
+    }
+  }

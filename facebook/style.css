@@ -1,0 +1,81 @@
+body{
+	background-color: #dfe3ee;
+	font-family: Segoi UI, Roboto, sans-serif;
+	color: white;
+}
+a{
+	font-size: 10px;
+	color: #8b9dc3;
+}
+a:hover{
+	color: 	#f7f7f7;
+}
+#header{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: (100%-20px);
+	background-image: linear-gradient(#4465ab,#3b5998,#4465ab);
+	height: 50px;
+	padding: 10px;
+}
+
+#header-right {
+  float: right;
+  margin-right: 80px;
+}
+
+.logo {
+  font-size: 40px;
+  font-stretch: semi-condensed;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 10%;
+  float: left;
+}
+
+.box{
+	display: inline-table;
+	margin-right: 10px;
+	font-size: 12px;
+}
+
+input[type=email], input[type=password]{
+	display: block;
+	position: 
+}
+
+input[type=submit]{
+	position: absolute;
+	border:1px solid #3b5998;
+	background-color:#4b70bf; 
+	color: white;
+	border-radius: 5px;
+	padding: 5px;
+}
+input[type=submit]:hover{
+	background-color: #35518c;
+}
+@media screen and (max-width: 700px) {
+  #header-right {
+    float: none;
+    display: none;
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .logo{
+  	margin-left: 10px;
+  }
+}
+
+#registration{
+	
+	text-align: center;
+	width: 100%;
+	height: 70%;
+	color: black;
+	font:center;
+}
