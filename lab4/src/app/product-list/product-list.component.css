@@ -1,0 +1,21 @@
+div.polaroid {
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  #share{
+    color: aliceblue;
+  }
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
