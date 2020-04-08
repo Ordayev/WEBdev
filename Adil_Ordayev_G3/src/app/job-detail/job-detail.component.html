@@ -1,0 +1,17 @@
+<button (click)="goBack()"><i class="arrow left"></i>Go back</button>
+
+<h3>
+    {{job.title}}
+</h3>
+<p>
+    Description: {{job.description}} 
+</p>
+
+<label>name:
+    <input [(ngModel)]="job.title" placeholder="title"/>
+</label>
+<p>
+    Number of Likes:{{job.like_count}}
+</p>
+<button>Like</button>
+
